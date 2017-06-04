@@ -1356,7 +1356,7 @@ public class Realm {
 
    public boolean townExists(String name) {
 	   for (Town town: towns) {
-		   if (town.getName().equalsIgnoreCase(name)) {
+		   if (town != null && town.getName().equalsIgnoreCase(name)) {
 			   return true;
 		   }   
 	   }
